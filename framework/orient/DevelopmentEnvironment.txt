@@ -1,0 +1,57 @@
+Windows 7
+=========
++) Java SDK 7.51
+  - set JAVA_HOME
+
++) Maven 3.1.1
+  - add nexus to settings
+
+
+
+
++) Git 1.9.0
+
++) Visual Studio Express 2013
+
++) notepad++
+
+
+Linux
+=====
+
+
+
+
+
+
+
+Maven Settings
+==============
+
+<mirror>
+    <id>public</id>
+    <mirrorOf>external:*,!sonar</mirrorOf>
+    <name>some.url-public</name>
+    <url>http://some.url/nexus/content/groups/public</url>
+</mirror>
+
+<profile>
+    <id>allow-snapshots</id>
+    <activation><activeByDefault>true</activeByDefault></activation>
+    <repositories>
+        <repository>
+            <id>public</id>
+            <url>http://some.url/nexus/content/groups/public</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>some.url-public</id>
+            <url>http://some.url/nexus/content/groups/public</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+</profile>
