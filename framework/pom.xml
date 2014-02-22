@@ -1,0 +1,91 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.akehurst.mdd</groupId>
+	<artifactId>mdd.framework.root</artifactId>
+	<packaging>pom</packaging>
+	<version>0.8.0</version>
+
+	<!-- More Project Information -->
+	<name>${project.artifactId}</name>
+	<description>...</description>
+	<url>...</url>
+	<inceptionYear>2013</inceptionYear>
+	<licenses>
+		<license>
+			<name>Eclipse Public License - v 1.0</name>
+			<url>http://www.eclipse.org/legal/epl-v10.html</url>
+			<distribution></distribution>
+			<comments>(c) Dr. D.H.Akehurst</comments>
+		</license>
+	</licenses>
+	<organization>
+		<name>Dr. David H. Akehurst</name>
+		<url></url>
+	</organization>	
+	
+	<scm>
+		<connection>scm:git:git://github.com/dhakehurst/mdd.codeGenerator.git</connection>
+	</scm>	
+	
+	<properties>
+		<!-- version 1.4.0 requires the local mvn repository to be in the default directioy location -->
+		<npanday-version>1.5.0-incubating-SNAPSHOT</npanday-version>
+	</properties>
+	
+	<modules>
+		<module>design</module>
+		<module>develop/mdd.framework</module>
+		<module>develop/mdd.framework.os.Realisation</module>
+<!--
+		<module>develop/mdd.framework.persistence.xml/csharp</module>
+		<module>develop/mdd.framework.logging.log4net/dotNet_4.0</module>
+		<module>develop/mdd.framework.io.Realisation</module>
+		<module>develop/mdd.framework.graphics.Realisation</module>
+-->
+	</modules>
+	
+
+	<build>
+	
+		<plugins>
+			
+			<!--
+				For pulling build info into maven properties,
+				for subsequent use to embed into binaries and distributions
+				http://www.smartics.eu/maven-buildmetadata-plugin/
+			-->
+			<plugin>
+			  <groupId>de.smartics.maven.plugin</groupId>
+			  <artifactId>buildmetadata-maven-plugin</artifactId>
+			  <version>1.3.0</version>
+			  <configuration>
+				<addScmInfo>false</addScmInfo>
+				<xmlOutputFile>${project.build.directory}/${project.artifactId}-buildmetadata.xml</xmlOutputFile>
+			  </configuration>
+			  <executions>
+				<execution>
+				  <phase>initialize</phase>
+				  <goals>
+					<goal>provide-buildmetadata</goal>
+				  </goals>
+				</execution>
+			  </executions>
+			</plugin>
+			
+
+		</plugins>
+		
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.scm</groupId>
+        <artifactId>maven-scm-provider-gitexe</artifactId>
+        <version>1.7</version>
+      </extension>
+    </extensions>
+	</build>
+
+</project>
