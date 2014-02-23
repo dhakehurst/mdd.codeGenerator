@@ -1,0 +1,12 @@
+
+namespace framework.os.threading {
+
+	public interface Semaphore
+	
+	{
+		void acquire();
+        void acquire(global::framework.time.Duration timeout);
+        void release();
+	}
+
+}

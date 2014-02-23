@@ -1,0 +1,17 @@
+
+namespace framework.os.threading {
+
+	public interface Runnable
+	
+	{
+	  // --- Receptions ---
+	
+	  // --- Operations ---
+		void run();
+		void stop();
+	
+	  // --- Properties ---
+	
+	}
+
+}

@@ -1,0 +1,14 @@
+
+namespace framework.os.interprocess {
+
+    using global::framework.basicTypes;
+
+    public class ThreadingException : global::framework.basicTypes.Exception {
+
+        public ThreadingException(String message)
+            : base(message) {
+        }
+
+    }
+
+} //namespace framework.os.interprocess

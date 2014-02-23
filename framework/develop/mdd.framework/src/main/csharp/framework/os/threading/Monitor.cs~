@@ -1,0 +1,14 @@
+
+namespace framework.os.threading {
+
+	public interface Monitor
+	
+	{
+        void waitOn();
+        void waitOn(global::framework.time.Duration timeout);
+        void notifyOne();
+        void notifyAll();
+	
+	}
+
+}
