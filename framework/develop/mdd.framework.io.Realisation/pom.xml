@@ -1,0 +1,67 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>mdd.framework.io.Realisation</artifactId>
+	<packaging>dotnet-library</packaging>
+	
+	<parent>
+		<groupId>net.akehurst.mdd</groupId>
+		<artifactId>mdd.framework.root</artifactId>
+		<version>0.8.0</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	
+	<dependencies>
+
+		<dependency>
+            <groupId>net.akehurst.mdd</groupId>
+            <artifactId>mdd.framework</artifactId>
+            <version>0.8.0</version>
+            <type>dotnet-library</type>
+		</dependency>
+	
+		<dependency>
+            <groupId>NUnit</groupId>
+            <artifactId>NUnit.Framework</artifactId>
+            <version>2.5.9</version>
+            <type>dotnet-library</type>
+		</dependency>
+		
+	</dependencies>
+	
+    <build>
+		<sourceDirectory>${basedir}/src/main/csharp</sourceDirectory>
+		<testSourceDirectory>${basedir}src/test/csharp</testSourceDirectory>
+		
+		<plugins>
+			<!-- compiler -->
+			<plugin> 
+				<groupId>org.apache.npanday.plugins</groupId>
+				<artifactId>maven-compile-plugin</artifactId>
+				<version>${npanday-version}</version>
+				<extensions>true</extensions> 
+				<configuration>
+				  <frameworkVersion>4.0</frameworkVersion>
+				  <testFrameworkVersion>4.0</testFrameworkVersion>
+				  <unsafe>true</unsafe>
+				</configuration>
+			</plugin>
+			
+			<!-- test executer -->
+			<plugin>
+				<groupId>org.apache.npanday.plugins</groupId>
+				<artifactId>maven-test-plugin</artifactId>
+				<version>${npanday-version}</version>
+				<configuration>
+				  <executionFrameworkVersion>4.0</executionFrameworkVersion>
+				</configuration>
+			</plugin>
+		
+		</plugins>
+		
+	</build>
+	
+</project>
