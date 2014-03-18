@@ -19,9 +19,10 @@
 			<name>Eclipse Public License - v 1.0</name>
 			<url>http://www.eclipse.org/legal/epl-v10.html</url>
 			<distribution></distribution>
-			<comments>(c) Dr. D.H.Akehurst</comments>
+			<comments>(c) Dr. David H. Akehurst</comments>
 		</license>
 	</licenses>
+    <!-- npanday uses the 'COPYRIGHT.txt' file(s) to add copyright info to a dll -->
 	<organization>
 		<name>Dr. David H. Akehurst</name>
 		<url></url>
@@ -40,10 +41,11 @@
 		<module>design</module>
 		<module>develop/mdd.framework</module>
 		<module>develop/mdd.framework.os.Realisation</module>
+		<module>develop/mdd.framework.io.Realisation</module>
 <!--
 		<module>develop/mdd.framework.persistence.xml/csharp</module>
 		<module>develop/mdd.framework.logging.log4net/dotNet_4.0</module>
-		<module>develop/mdd.framework.io.Realisation</module>
+
 		<module>develop/mdd.framework.graphics.Realisation</module>
 -->
 	</modules>

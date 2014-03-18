@@ -6,7 +6,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>mdd.framework.os.Realisation</artifactId>
 	<packaging>dotnet-library</packaging>
-
 	
 	<parent>
 		<groupId>net.akehurst.mdd</groupId>
@@ -18,17 +17,17 @@
 	<dependencies>
 
 		<dependency>
-		  <groupId>net.akehurst.mdd</groupId>
-		  <artifactId>mdd.framework</artifactId>
-		  <version>0.8.0</version>
-		  <type>dotnet-library</type>
+            <groupId>net.akehurst.mdd</groupId>
+            <artifactId>mdd.framework</artifactId>
+            <version>0.8.0</version>
+            <type>dotnet-library</type>
 		</dependency>
 	
 		<dependency>
-		  <groupId>NUnit</groupId>
-		  <artifactId>NUnit.Framework</artifactId>
-		  <version>2.5.9</version>
-		  <type>dotnet-library</type>
+            <groupId>NUnit</groupId>
+            <artifactId>NUnit.Framework</artifactId>
+            <version>2.5.9</version>
+            <type>dotnet-library</type>
 		</dependency>
 		
 	</dependencies>

@@ -7,7 +7,7 @@
 * Contributors:
 * 
 *************************************************************************/
-﻿namespace framework.os.dotNet_4_0 {
+﻿namespace framework.os {
 
     using framework.basicTypes;
     using framework.collections;
