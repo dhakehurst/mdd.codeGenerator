@@ -1,0 +1,93 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.akehurst.mdd</groupId>
+	<artifactId>mdd.codeGenerator.root</artifactId>
+	<packaging>pom</packaging>
+	<version>0.8.0</version>
+
+	<!-- More Project Information -->
+	<name>${project.artifactId}</name>
+	<description>...</description>
+	<url>...</url>
+	<inceptionYear>2013</inceptionYear>
+	<licenses>
+		<license>
+			<name>Eclipse Public License - v 1.0</name>
+			<url>http://www.eclipse.org/legal/epl-v10.html</url>
+			<distribution></distribution>
+			<comments>(c) Dr. D.H.Akehurst</comments>
+		</license>
+	</licenses>
+	<organization>
+		<name>Dr. David H. Akehurst</name>
+	</organization>	
+	
+	<modules>
+		<module>develop/mdd.codeGenerator.common</module>
+		<module>develop/mdd.codeGenerator.csharp</module>
+	</modules>
+
+	<build>
+	    	<sourceDirectory>${basedir}/main/java</sourceDirectory>
+
+		<pluginManagement>
+			<plugins>
+	    	
+				<plugin>
+					<groupId>org.eclipse.acceleo</groupId>
+					<artifactId>maven</artifactId>
+					<version>3.2.1c</version>
+					<configuration>
+						<useBinaryResources>false</useBinaryResources>
+						<usePlatformResourcePath>true</usePlatformResourcePath>
+						<failOnError>true</failOnError>
+						<!-- uriHandler required or compiler puts hard coded paths in emtl files -->
+						<uriHandler>org.eclipse.acceleo.maven.AcceleoURIHandler</uriHandler>					
+						<acceleoProject>
+							<root>${project.basedir}</root>
+							<entries>
+								<entry>
+									<input>main/m2t</input>
+									<output>target/classes</output>
+								</entry>
+							</entries>
+						</acceleoProject>
+						<packagesToRegister>
+							<packageToRegister>org.eclipse.uml2.uml.UMLPackage</packageToRegister>
+							<packageToRegister>mdd.language.objectNavigation.ObjectNavigationPackage</packageToRegister>
+							<packageToRegister>mdd.language.objectAction.ObjectActionPackage</packageToRegister>
+						</packagesToRegister>
+					</configuration>
+					<executions>
+						<execution>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>acceleo-compile</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+	</build>
+
+ 	<distributionManagement>
+
+	</distributionManagement>
+	
+</project>
