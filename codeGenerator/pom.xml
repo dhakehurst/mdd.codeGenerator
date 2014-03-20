@@ -19,7 +19,7 @@
 			<name>Eclipse Public License - v 1.0</name>
 			<url>http://www.eclipse.org/legal/epl-v10.html</url>
 			<distribution></distribution>
-			<comments>(c) Dr. D.H.Akehurst</comments>
+			<comments>(c) Dr. David H. Akehurst</comments>
 		</license>
 	</licenses>
 	<organization>
@@ -32,7 +32,7 @@
 	</modules>
 
 	<build>
-	    	<sourceDirectory>${basedir}/main/java</sourceDirectory>
+	    	<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 
 		<pluginManagement>
 			<plugins>
@@ -51,15 +51,13 @@
 							<root>${project.basedir}</root>
 							<entries>
 								<entry>
-									<input>main/m2t</input>
+									<input>src/main/java</input>
 									<output>target/classes</output>
 								</entry>
 							</entries>
 						</acceleoProject>
 						<packagesToRegister>
 							<packageToRegister>org.eclipse.uml2.uml.UMLPackage</packageToRegister>
-							<packageToRegister>mdd.language.objectNavigation.ObjectNavigationPackage</packageToRegister>
-							<packageToRegister>mdd.language.objectAction.ObjectActionPackage</packageToRegister>
 						</packagesToRegister>
 					</configuration>
 					<executions>
