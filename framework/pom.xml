@@ -42,9 +42,10 @@
 		<module>develop/mdd.framework</module>
 		<module>develop/mdd.framework.os.Realisation</module>
 		<module>develop/mdd.framework.io.Realisation</module>
+		<module>develop/mdd.framework.logging.log4net</module>
 <!--
 		<module>develop/mdd.framework.persistence.xml/csharp</module>
-		<module>develop/mdd.framework.logging.log4net/dotNet_4.0</module>
+
 
 		<module>develop/mdd.framework.graphics.Realisation</module>
 -->
