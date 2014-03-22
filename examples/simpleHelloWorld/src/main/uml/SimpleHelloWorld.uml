@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MddProfile="http:///schemas/MddProfile/_4V7OULEAEeOf2qQSh3qkSA/16" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/MddProfile/_4V7OULEAEeOf2qQSh3qkSA/16 ../../../target/unpacked/uml/MddProfile.uml#_4V7OUbEAEeOf2qQSh3qkSA">
   <uml:Model xmi:id="_Be_Z8LBkEeO4PqF2xmqEug" name="SimpleHelloWorld">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_YsHa0LG3EeOu8416JIHP_Q">
+      <body>Copyright (c) 2013 - 2014 Dr David H. Akehurst.&#xD;
+All rights reserved. This program and the accompanying materials&#xD;
+are made available under the terms of the Eclipse Public License v1.0&#xD;
+and is available at http://www.eclipse.org/legal/epl-v10.html</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_J7DAQLBkEeO4PqF2xmqEug" clientDependency="_8_KKoLD9EeO6id4FcECpfg" name="simpleHelloWorld" fileName="Artifact1.file">
       <manifestation xmi:type="uml:Manifestation" xmi:id="_8_KKoLD9EeO6id4FcECpfg" name="Package simpleHelloWorld" client="_J7DAQLBkEeO4PqF2xmqEug" supplier="_NGNUsLBkEeO4PqF2xmqEug" utilizedElement="_NGNUsLBkEeO4PqF2xmqEug"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_C_x7ILHAEeOcWaDUjBjzIg" name="app" type="_SrjMkLBkEeO4PqF2xmqEug" aggregation="composite"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_NGNUsLBkEeO4PqF2xmqEug" name="helloWorld">
-      <packagedElement xmi:type="uml:Component" xmi:id="_SrjMkLBkEeO4PqF2xmqEug" name="HelloWorldApplication"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_SrjMkLBkEeO4PqF2xmqEug" name="HelloWorldApplication">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_iT6XULG-EeOcWaDUjBjzIg" name="greeter" type="_orUQMLG8EeOcWaDUjBjzIg" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_orUQMLG8EeOcWaDUjBjzIg" name="Greeter" isActive="true">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KHKqALG_EeOcWaDUjBjzIg" name="runStep" specification="_DcaCMLG_EeOcWaDUjBjzIg">
+          <language>C#</language>
+          <body>System.Console.WriteLine(&quot;Hello World!&quot;);
+this.stop();</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_DcaCMLG_EeOcWaDUjBjzIg" name="runStep" method="_KHKqALG_EeOcWaDUjBjzIg"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ky-WoLEBEeO6id4FcECpfg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kzTGwLEBEeO6id4FcECpfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
