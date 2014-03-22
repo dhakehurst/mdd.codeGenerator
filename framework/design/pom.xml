@@ -19,7 +19,10 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>./model</directory>
+				<directory>./src/main/uml</directory>
+                <includes>
+                    <include>*.uml</include>
+                </includes>
 			</resource>
 		</resources>
 
