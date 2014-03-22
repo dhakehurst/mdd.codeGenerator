@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MddProfile="http:///schemas/MddProfile/_4V7OULEAEeOf2qQSh3qkSA/16" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/MddProfile/_4V7OULEAEeOf2qQSh3qkSA/16 ../../../target/unpacked/uml/MddProfile.uml#_4V7OUbEAEeOf2qQSh3qkSA">
+  <uml:Model xmi:id="_Be_Z8LBkEeO4PqF2xmqEug" name="SimpleHelloWorld">
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_J7DAQLBkEeO4PqF2xmqEug" clientDependency="_8_KKoLD9EeO6id4FcECpfg" name="simpleHelloWorld" fileName="Artifact1.file">
+      <manifestation xmi:type="uml:Manifestation" xmi:id="_8_KKoLD9EeO6id4FcECpfg" name="Package simpleHelloWorld" client="_J7DAQLBkEeO4PqF2xmqEug" supplier="_NGNUsLBkEeO4PqF2xmqEug" utilizedElement="_NGNUsLBkEeO4PqF2xmqEug"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NGNUsLBkEeO4PqF2xmqEug" name="helloWorld">
+      <packagedElement xmi:type="uml:Component" xmi:id="_SrjMkLBkEeO4PqF2xmqEug" name="HelloWorldApplication"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ky-WoLEBEeO6id4FcECpfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kzTGwLEBEeO6id4FcECpfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../../../target/unpacked/uml/MddProfile.uml#_4V7OUbEAEeOf2qQSh3qkSA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../../../target/unpacked/uml/MddProfile.uml#_XkGiwB07Ed-QQ4mYkrb7Gg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_kzU78LEBEeO6id4FcECpfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kzlaoLEBEeO6id4FcECpfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../../../target/unpacked/uml/UmlTestingProfile.uml#__rV8sbEAEeOf2qQSh3qkSA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../../../target/unpacked/uml/UmlTestingProfile.uml#_ukS-AYt0EeGgO7k3ERwojg"/>
+    </profileApplication>
+  </uml:Model>
+  <MddProfile:Executable xmi:id="_m-bhkLEBEeO6id4FcECpfg" base_Artifact="_J7DAQLBkEeO4PqF2xmqEug"/>
+  <MddProfile:Versionable xmi:id="_m-fL8LEBEeO6id4FcECpfg" base_Element="_J7DAQLBkEeO4PqF2xmqEug" version="1.0.0"/>
+</xmi:XMI>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+  <notation:Diagram xmi:id="_G91BMLBkEeO4PqF2xmqEug" type="Package" name="Model Organisation" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_NGQ_ELBkEeO4PqF2xmqEug" type="2007" fontName="Ubuntu" fontHeight="11" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NGSNMLBkEeO4PqF2xmqEug" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NGSNMbBkEeO4PqF2xmqEug" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NGSNMrBkEeO4PqF2xmqEug" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NGSNM7BkEeO4PqF2xmqEug" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NGSNNLBkEeO4PqF2xmqEug" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NGSNNbBkEeO4PqF2xmqEug" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_NGSNNrBkEeO4PqF2xmqEug" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_NGSNN7BkEeO4PqF2xmqEug" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_NGS0QLBkEeO4PqF2xmqEug"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NGS0QbBkEeO4PqF2xmqEug"/>
+      </children>
+      <element xmi:type="uml:Package" href="SimpleHelloWorld.uml#_NGNUsLBkEeO4PqF2xmqEug"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NGQ_EbBkEeO4PqF2xmqEug" x="55" y="105" width="486" height="221"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_G91BMbBkEeO4PqF2xmqEug"/>
+    <element xmi:type="uml:Model" href="SimpleHelloWorld.uml#_Be_Z8LBkEeO4PqF2xmqEug"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_JX9hULBkEeO4PqF2xmqEug" type="PapyrusUMLDeploymentDiagram" name="Artifacts" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_J7RCsLBkEeO4PqF2xmqEug" type="2006" fontName="Ubuntu" fontHeight="11">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qeHUgLEBEeO6id4FcECpfg" source="Stereotype_Annotation">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_06iQELEBEeO6id4FcECpfg" key="StereotypeWithQualifiedNameList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_06iQEbEBEeO6id4FcECpfg" key="StereotypeList" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_06iQErEBEeO6id4FcECpfg" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_06iQE7EBEeO6id4FcECpfg" key="PropStereoDisplay" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_06i3ILEBEeO6id4FcECpfg" key="StereotypePropertyLocation" value="Compartment"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_J7Te8LBkEeO4PqF2xmqEug" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_J7UGALBkEeO4PqF2xmqEug" visible="false" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_J7UGAbBkEeO4PqF2xmqEug"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J7UGArBkEeO4PqF2xmqEug"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_J7RCsbBkEeO4PqF2xmqEug"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_J7RCsrBkEeO4PqF2xmqEug"/>
+      <element xmi:type="uml:Artifact" href="SimpleHelloWorld.uml#_J7DAQLBkEeO4PqF2xmqEug"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J7RCs7BkEeO4PqF2xmqEug" x="125" y="315" width="211"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_JX9hUbBkEeO4PqF2xmqEug"/>
+    <element xmi:type="uml:Model" href="SimpleHelloWorld.uml#_Be_Z8LBkEeO4PqF2xmqEug"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_Zsgt4LBkEeO4PqF2xmqEug" type="CompositeStructure" name="CompositeDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_Zsgt4bBkEeO4PqF2xmqEug" type="2069" fontName="Ubuntu" fontHeight="11" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Zsgt4rBkEeO4PqF2xmqEug" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Zsgt47BkEeO4PqF2xmqEug" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Zsgt5LBkEeO4PqF2xmqEug" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Zsgt5bBkEeO4PqF2xmqEug" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Zsgt5rBkEeO4PqF2xmqEug" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Zsgt57BkEeO4PqF2xmqEug" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Zsgt6LBkEeO4PqF2xmqEug" type="5121"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Zsgt6bBkEeO4PqF2xmqEug" type="7069">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Zsgt6rBkEeO4PqF2xmqEug" showTitle="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zsgt67BkEeO4PqF2xmqEug"/>
+      </children>
+      <element xmi:type="uml:Component" href="SimpleHelloWorld.uml#_SrjMkLBkEeO4PqF2xmqEug"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zsgt7LBkEeO4PqF2xmqEug" x="40" y="40" width="861" height="431"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Zsgt7bBkEeO4PqF2xmqEug"/>
+    <element xmi:type="uml:Component" href="SimpleHelloWorld.uml#_SrjMkLBkEeO4PqF2xmqEug"/>
+  </notation:Diagram>
+</xmi:XMI>

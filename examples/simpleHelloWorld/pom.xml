@@ -1,0 +1,157 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.akehurst.mdd</groupId>
+	<artifactId>examples.simpleHelloWorld</artifactId>
+	<packaging>dotnet-executable</packaging>
+	<version>0.1.0</version>
+	
+	<dependencies>
+
+		<dependency>
+			<groupId>net.akehurst.mdd</groupId>
+        	<artifactId>mdd.framework</artifactId>
+        	<type>dotnet-library</type>
+			<version>0.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.akehurst.mdd</groupId>
+        	<artifactId>mdd.framework.os.Realisation</artifactId>
+        	<type>dotnet-library</type>
+			<version>0.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.akehurst.mdd</groupId>
+        	<artifactId>mdd.framework.io.Realisation</artifactId>
+        	<type>dotnet-library</type>
+			<version>0.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.akehurst.mdd</groupId>
+        	<artifactId>mdd.framework.persistence.xml</artifactId>
+        	<type>dotnet-library</type>
+			<version>0.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.akehurst.mdd</groupId>
+        	<artifactId>mdd.framework.logging.log4net</artifactId>
+        	<type>dotnet-library</type>
+			<version>0.8.0</version>
+		</dependency>
+
+	</dependencies>
+
+
+
+	<build>
+
+		<plugins>
+
+            <!-- Unpack model dependencies -->
+            <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-dependency-plugin</artifactId>
+             <version>2.5.1</version>
+             <executions>
+               <execution>
+                 <id>unpack</id>
+                 <phase>initialize</phase>
+                 <goals>
+                   <goal>unpack</goal>
+                 </goals>
+                 <configuration>
+                   <artifactItems>
+                     <artifactItem>
+			            <groupId>net.akehurst.mdd</groupId>
+			            <artifactId>mdd.framework.model</artifactId>
+			            <version>0.8.0</version>
+                       	<type>jar</type>
+                       	<overWrite>false</overWrite>
+                       	<outputDirectory>${project.build.directory}/unpacked/uml</outputDirectory>
+                     </artifactItem>
+                   </artifactItems>
+
+                 </configuration>
+               </execution>
+             </executions>
+            </plugin>
+
+            <!-- Code Generator -->
+			<plugin>
+				<groupId>net.akehurst.mdd</groupId>
+				<artifactId>mdd.codeGenerator.csharp</artifactId>
+				<version>0.8.0</version>
+				<configuration>
+					<models>
+						<modelUri>${basedir}/src/main/uml/SimpleHelloWorld.uml</modelUri>
+					</models>
+					<targetFolder>${basedir}/..</targetFolder>
+					<acceleoModuleFile>/mdd/codeGenerator/csharp/generate_Artifact</acceleoModuleFile>
+					<acceleoTemplates>generate</acceleoTemplates>
+					<artifacts>
+
+						<artifact>
+							<name>simpleHelloWorld</name>
+							<properties>
+								artifact.codeFolder=target/build-sources
+								artifact.testFolder=target/test-build-sources
+								pom.generate=false
+								pom.groupId=net.akehurst.mdd
+								mdd.framework-pom.groupId=net.akehurst.mdd
+							</properties>
+						</artifact>
+
+					</artifacts>
+
+				</configuration>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>csharp</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+            <!-- Compiler -->
+            <plugin>
+                <groupId>org.apache.npanday.plugins</groupId>
+                <artifactId>maven-compile-plugin</artifactId>
+                <version>1.5.0-incubating-SNAPSHOT</version>
+                <extensions>true</extensions>
+            </plugin>
+
+     <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <descriptors>
+            <descriptor>src/main/assembly/descriptor.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+		</plugins>
+
+	</build>
+
+
+	
+</project>
