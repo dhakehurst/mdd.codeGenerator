@@ -43,7 +43,7 @@
 		
     <build>
 	
-		<sourceDirectory>${basedir}/java/code</sourceDirectory>
+		<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 	
         <plugins>
 				<plugin>
