@@ -8,6 +8,29 @@
 	<artifactId>examples.simpleHelloWorld</artifactId>
 	<packaging>dotnet-executable</packaging>
 	<version>0.1.0</version>
+
+	<!-- More Project Information -->
+	<name>${project.artifactId}</name>
+	<description>...</description>
+	<url>...</url>
+	<inceptionYear>2013</inceptionYear>
+	<licenses>
+		<license>
+			<name>Eclipse Public License - v 1.0</name>
+			<url>http://www.eclipse.org/legal/epl-v10.html</url>
+			<distribution></distribution>
+			<comments>(c) Dr. David H. Akehurst</comments>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>Dr. David H. Akehurst</name>
+		<url></url>
+	</organization>	
+	
+	<scm>
+		<connection>scm:git:git://github.com/dhakehurst/mdd.codeGenerator.git</connection>
+	</scm>	
 	
 	<dependencies>
 
@@ -127,6 +150,10 @@
                 <artifactId>maven-compile-plugin</artifactId>
                 <version>1.5.0-incubating-SNAPSHOT</version>
                 <extensions>true</extensions>
+				<configuration>
+				  <frameworkVersion>4.0</frameworkVersion>
+				  <testFrameworkVersion>4.0</testFrameworkVersion>
+				</configuration>
             </plugin>
 
      <plugin>
